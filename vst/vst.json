@@ -1,0 +1,11 @@
+{
+  "name": "Cloud Reverb",
+  "vendor": "lunarscraper",
+  "uid": "ClRv",
+  "version": 1000,
+  "so": "cloudreverb.so",
+  "module": "module.json",
+  "layout": "layout.conf",
+  "effect": true,
+  "_comment": "Insert effect: a light reverb for long ambient tails with five TYPEs (cloudreverb_core.h). \"effect\": true makes gen_vst.py list it as an insert effect (as in mpc-vst-rat). vst.json/module.json only feed mpc-vst-plugins' tools/gen_vst.py for params.h + the skin. The plugin is cloudreverb_vst.cpp, built by this port's own build.sh."
+}

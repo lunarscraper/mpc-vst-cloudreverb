@@ -1,0 +1,20 @@
+{
+  "_comment": "Not a real Schwung module -- chain_params lists the VST parameters of cloudreverb_vst.cpp so mpc-vst-plugins' tools/gen_vst.py can generate params.h + the skin. Keys must match cloudreverb_vst.cpp (KEYS[]). Start values the plugin sets itself (start_values()). Only append, never reorder; projects and presets restore by key.",
+  "chain_params": [
+    {"key": "mix", "name": "Mix", "min": 0, "max": 100},
+    {"key": "size", "name": "Size", "min": 0, "max": 100},
+    {"key": "decay", "name": "Decay", "min": 0, "max": 100},
+    {"key": "predelay", "name": "Predelay", "min": 0, "max": 100},
+    {"key": "diffusion", "name": "Diffusion", "min": 0, "max": 100},
+    {"key": "mod", "name": "Modulation", "min": 0, "max": 100},
+    {"key": "tone", "name": "Tone", "min": 0, "max": 100},
+    {"key": "lowcut", "name": "Low Cut", "min": 0, "max": 100},
+    {"key": "slot", "name": "Preset", "min": 1, "max": 32},
+    {"key": "load", "name": "Load", "access": "write"},
+    {"key": "save", "name": "Save", "access": "write"},
+    {"key": "type", "name": "Type", "options": ["CLOUD", "SWELL", "SHIMMER", "TIDE", "DRONE", "CHOIR", "MODAL"]},
+    {"key": "character", "name": "Character", "min": 0, "max": 100},
+    {"key": "root", "name": "Root", "min": 0, "max": 11},
+    {"key": "chord", "name": "Chord", "options": ["OCTAVES", "FIFTHS", "MAJOR", "MINOR", "SUS 2", "SUS 4", "MAJOR 7", "MINOR 7", "TANPURA"]}
+  ]
+}
